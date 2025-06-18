@@ -1,0 +1,22 @@
+#primary-menu {
+  padding-block: 20px;
+  justify-content: space-between;
+
+  & div {
+      display: flex;
+      align-items: center;
+      column-gap: 8px;
+  }
+}
+
+#secondary-menu {
+  border-block: 1px solid var(--stroke-color);
+  padding-block: 14px;
+  justify-content: space-between;
+  
+  & a {
+    font: var(--text-span);
+    color: var(--text-color-secondary);
+  }
+}
+
