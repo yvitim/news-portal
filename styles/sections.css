@@ -1,3 +1,8 @@
+section header {
+  border-top: 1px solid var(--stroke-color);
+  padding-top: 12px;
+}
+
 #featured {
   & img {
     height: 100%;
@@ -41,6 +46,44 @@
 
       & h2 {
         margin-top: 8px;
+      }
+    }
+  }
+}
+
+#weekly {
+  & header {
+    font: var(--text-span);
+    color: var(--text-color-secondary);
+    justify-content: space-between;
+
+    & a {
+      display: flex;
+      align-items: center;
+      column-gap: 4px;
+
+      &:hover svg path {
+        fill: var(--brand-color-light);
+        transition: fill 0.3s ease;
+      }
+    }
+  }
+
+  & div {
+    grid-template-columns: repeat(4, 1fr);
+    margin-block: 24px;
+    
+    & figure {
+      position: relative;
+  
+      & > figcaption {
+        margin-top: 8px;
+    
+        & .positioned {
+          position: absolute;
+          top: 8px;
+          left: 8px;
+        }
       }
     }
   }
