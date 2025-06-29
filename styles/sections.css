@@ -88,3 +88,108 @@ section header {
     }
   }
 }
+
+#others {
+  grid-template-columns: 1.45fr 1fr;
+  gap: 32px;
+
+  & #others-highlights header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    color: var(--text-color-secondary);
+    font: var(--text-span);
+
+    & a {
+      display: flex;
+      align-items: center;
+      column-gap: 4px;
+
+      &:hover svg path {
+        fill: var(--brand-color-light);
+        transition: fill 0.3s ease;
+      }
+    }
+  }
+
+  & #others-highlights section {
+    gap: 32px;
+
+    & figure {
+      display: flex;
+      gap: 16px;
+
+      & img {
+        max-width: 176px;
+      }
+
+      & figcaption span {
+        margin-block: 6px 8px;
+      }
+
+      & figcaption h2 {
+        margin-bottom: 4px;
+      }
+
+      & figcaption p {
+        color: var(--text-color-secondary);
+      }
+    }
+  }
+
+  & #see-more {
+    gap: 32px;
+
+    & #ads {
+      position: relative;
+
+      & #close-button {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        cursor: pointer;
+      }
+    }
+
+    & #content {
+      display: grid;
+      gap: 24px;
+
+      & header {
+        display: flex;
+        justify-content: space-between;
+        font: var(--text-span);
+        color: var(--text-color-secondary);
+
+        & a {
+          display: flex;
+          gap: 4px;
+          align-items: center;
+
+          &:hover svg path {
+            fill: var(--brand-color-light);
+            transition: fill 0.3s ease;
+          }
+        }
+      }
+
+      & #articles {
+        display: grid;
+        gap: 32px;
+
+        & figure {
+          display: flex;
+          gap: 15px;
+
+          & img {
+            max-width: 72px;
+          }
+
+          & figcaption span {
+            margin-bottom: 8px;
+          }
+        }
+      }
+    }
+  }
+}
