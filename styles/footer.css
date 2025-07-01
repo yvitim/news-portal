@@ -1,0 +1,13 @@
+footer {
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 24px;
+
+  & div {
+    column-gap: 16px;
+
+    & a {
+      padding: 4px;
+    }
+  }
+}

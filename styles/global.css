@@ -53,7 +53,7 @@ img {
 }
 
 main {
-  margin-top: 40px;
+  margin-block: 40px 80px;
   row-gap: 80px;
 }
 
