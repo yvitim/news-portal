@@ -14,6 +14,28 @@
   gap: 16px;
 }
 
+.flex {
+  display: flex;
+}
+
+.secondary-header {
+  border-top: 1px solid var(--stroke-color);
+  padding-top: 12px;
+  font: var(--text-span); 
+  color: var(--text-color-secondary);
+  justify-content: space-between;
+}
+
+.link-button {
+  align-items: center;
+  column-gap: 4px;
+
+  &:hover svg path {
+    fill: var(--brand-color-light);
+    transition: fill 0.3s ease;
+  }
+}
+
 .text-2xl {
   font: var(--h1);
 }
