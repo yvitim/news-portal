@@ -36,6 +36,23 @@
   }
 }
 
+.fixed-lines {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.in-2-lines {
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+.in-4-lines {
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+}
+
 .text-2xl {
   font: var(--h1);
 }

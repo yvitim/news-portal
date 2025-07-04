@@ -99,6 +99,7 @@
   }
 
   & #see-more {
+    align-content: center;
     gap: 32px;
 
     & #ads {
@@ -118,6 +119,7 @@
 
     & #content {
       display: grid;
+      grid-auto-rows: min-content;
       gap: 24px;
 
       & #articles {
